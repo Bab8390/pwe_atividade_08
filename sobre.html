@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Sobre - IFSP - Pirituba</title>
 <script src="js/disabling.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
 </head>
 <body>
 
@@ -15,11 +19,14 @@
   </header>
   
   <main>
-  
-    <p>
-      <h1>Sobre</h1>
-    </p>
-  
+    <div id ="mydiv"></div>
+    <script type="text/babel">
+      class Hello extends React.Component {
+        render(){
+          return <p> O <b>Instituto Federal de Educação, c</p>
+        }
+      }
+    </script>
   </main>
   
   <footer>     
